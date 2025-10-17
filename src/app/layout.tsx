@@ -26,26 +26,18 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-           {' '}
       <html lang="en">
-               {' '}
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-                    <Header />         {' '}
+          <Header />
           <main className="min-h-screen">
-                       {' '}
             <div className="container mx-auto px-4 pt-20">
-                            <div className="max-w-2xl mx-auto">{children}</div> 
-                       {' '}
+              <div className="max-w-2xl mx-auto">{children}</div>
             </div>
-                     {' '}
           </main>
-                 {' '}
         </body>
-             {' '}
       </html>
-         {' '}
     </ClerkProvider>
   )
 }
