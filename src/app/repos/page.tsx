@@ -11,7 +11,7 @@ export default async function ReposPage() {
     `https://api.github.com/users/${username}/repos`,
     {
       headers: {
-        Authorization: `token ${process.env.GITHUB_ACCESS_TOKEN}`,
+        Authorization: `token ${process.env.GITHUB_TOKEN}`,
       },
     }
   )
